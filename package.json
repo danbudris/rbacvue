@@ -1,0 +1,38 @@
+{
+  "name": "rbacvue",
+  "version": "0.0.1",
+  "description": "A simple viewer for K8s RBAC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbudris/rbacvue.git"
+  },
+  "keywords": [
+    "RBAC",
+    "Kubernetes",
+    "Vue",
+    "Role",
+    "Based",
+    "Access",
+    "Control",
+    "visualization"
+  ],
+  "author": "Dan Budris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danbudris/rbacvue/issues"
+  },
+  "homepage": "https://github.com/danbudris/rbacvue#readme",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.4.5",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.30.0"
+  }
+}
