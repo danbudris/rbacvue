@@ -16,7 +16,7 @@ export default Vue.extend({
     data() {
         return {
             Role: this.Role,
-            Pods: k8sApi.getPods()
+            Pods: k8sApi.getRoles()
         }
     },
     mounted() {

@@ -1,17 +1,17 @@
-const k8s = require('@kubernetes/client-node');
+import axios from "axios"
 
-const kc = new k8s.KubeConfig();
-kc.loadFromDefault();
-
-const k8sApi = kc.makeApiClient(k8s.Core_v1Api);
+const caCert = process.env.caCert;
+const bearerToken = process.env.bearerToken;
+const k8sApiServer = process.env.k8sApiServer;
 
 export default {
-    getPods(){
-        k8sApi.listNamespacedPod('default').then((res:any) => {
-            return(res.data);
-        });
+    getRoles(){
+        return axios.get("https://kubernetes.default.svc/api"
+        ).then(response => {
+            return response.data
+        })
     }
-}
+};
 
 /*import axios from "axios"
 
@@ -27,4 +27,24 @@ export default {
         })
     }
 };
+const k8s = require('@kubernetes/client-node');
+
+const kc = new k8s.KubeConfig();
+kc.loadFromDefault();
+
+const k8sApi = kc.makeApiClient(k8s.Core_v1Api);
+
+export default {
+    getRoles(){
+        
+    },
+    getPods(){
+        k8sApi.listNamespacedPod('default').then((res:any) => {
+            return(res.data);
+        });
+    }
+}
+
+
 */
+
