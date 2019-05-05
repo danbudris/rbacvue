@@ -1,0 +1,5 @@
+Get the RBAC call resolving inside of the pod -- in src/services/api/k8s.ts
+this is currently getting a network error in the minikube run pod -- shoudl figure out why and make sure we can resolve the API server
+then, we can import the CA cert and the SA token, and construct the Axios call with them, to get the running roles
+
+understand webpack...
