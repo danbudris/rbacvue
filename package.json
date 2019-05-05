@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/danbudris/rbacvue#readme",
   "devDependencies": {
+    "@kubernetes/client-node": "^0.8.2",
     "axios": "^0.18.0",
     "css-loader": "^2.1.1",
     "ts-loader": "^5.4.5",
