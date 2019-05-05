@@ -8,7 +8,7 @@ let v = new Vue({
     <div>
         Name: <input v-model="name" type="text">
         <hello-component :name="name" :initialEnthusiasm="5" />
-        <roles-component :TEST="testValue" />
+        <roles-component :Role="testValue" />
     </div>
     `,
     data: { 

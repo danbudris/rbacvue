@@ -15,7 +15,7 @@ spec:
         app: rbac-viewer
     spec:
       containers:
-      - name: danbudris/rbacvue:latest
-        image: rbacvue:latest
+      - name: rbacvue
+        image: danbudris/rbacvue:latest
         ports:
         - containerPort: 8080
