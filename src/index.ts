@@ -1,5 +1,5 @@
 import Vue from "vue";
-import RoleComponent from "./components/role.vue";
+import RoleComponent from "./components/Role.vue";
 import HelloComponent from "./components/Hello.vue";
 
 let v = new Vue({
