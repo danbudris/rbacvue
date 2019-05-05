@@ -8,7 +8,7 @@ export default {
     getRoles(){
         return axios.get("https://kubernetes.default.svc/api"
         ).then(response => {
-            return response.data
+            console.log(response.data)
         })
     }
 };
